@@ -7,6 +7,7 @@ function App() {
   
   return (
     <div>
+      <h1>총합: { count1 + count2 }</h1>
       <Counter
         count = { count1 }
         onIncrement = { () => setCount1( prev => prev + 1 ) }
@@ -23,7 +24,7 @@ function Counter({ count, onIncrement }) {
 
   return (
     <div>
-      <h1>Counter: {count}</h1>
+      <h1>Counter: { count }</h1>
       <button 
         onClick={ () => onIncrement() }>
         증가
